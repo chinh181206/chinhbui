@@ -1,0 +1,102 @@
+/* Đặt font chữ hiện đại */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: #5a5af5;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btn {
+    background: linear-gradient(90deg, #5a5af5, #2c82c9);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #2c82c9, #5a5af5);
+    transform: scale(1.05);
+}
+
+.success-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #27ae60;
+    padding: 10px;
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
+    background: #eafaf1;
+}
